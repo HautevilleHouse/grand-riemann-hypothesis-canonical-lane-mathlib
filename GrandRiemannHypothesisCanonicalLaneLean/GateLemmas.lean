@@ -1,0 +1,14 @@
+import GrandRiemannHypothesisCanonicalLaneLean.BridgeLemmas
+
+namespace HautevilleHouse
+namespace GrandRiemannHypothesisCanonicalLaneLean
+
+def gateClosed (A : AdmissibleClass) : Prop :=
+  A.endpointSatisfied ∨ A.remainderRecorded
+
+theorem gate_from_admissible_class (A : AdmissibleClass) :
+    gateClosed A := by
+  exact A.gateWitness
+
+end GrandRiemannHypothesisCanonicalLaneLean
+end HautevilleHouse
